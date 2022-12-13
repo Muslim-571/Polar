@@ -1,0 +1,1495 @@
+.header__container,
+body {
+    display: -webkit-box;
+    display: -ms-flexbox
+}
+
+body,
+html {
+    height: 100%
+}
+
+*,
+::after,
+::before,
+body,
+li,
+ol,
+ul {
+    padding: 0;
+    margin: 0
+}
+
+.header__links,
+body {
+    font-weight: 400;
+    font-style: normal
+}
+
+.header__links,
+.header__links:active,
+.hero__text,
+body {
+    font-style: normal
+}
+
+.bread__sale,
+.orange__sale,
+.sweat__sale {
+    -webkit-text-decoration-line: line-through;
+    text-decoration-line: line-through
+}
+
+.navi__first,
+.navi__fourth,
+.navi__left,
+.navi__second,
+.navi__third,
+.orange__left,
+.product__container,
+body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal
+}
+
+@font-face {
+    font-family: 'Fredoka One';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/fredoka-one-v13-latin-regular.woff2') format('woff2'), url('../fonts/fredoka-one-v13-latin-regular.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/hind-madurai-v11-latin-regular.woff2') format('woff2'), url('../fonts/hind-madurai-v11-latin-regular.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('../fonts/hind-madurai-v11-latin-600.woff2') format('woff2'), url('../fonts/hind-madurai-v11-latin-600.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../fonts/hind-madurai-v11-latin-700.woff2') format('woff2'), url('../fonts/hind-madurai-v11-latin-700.woff') format('woff')
+}
+
+@font-face {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'), url('../fonts/roboto-v30-latin-regular.woff') format('woff')
+}
+
+@font-face {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('../fonts/roboto-v30-latin-500.woff2') format('woff2'), url('../fonts/roboto-v30-latin-500.woff') format('woff')
+}
+
+::-moz-selection {
+    color: var(--white);
+    background-color: var(--pink)
+}
+
+::selection {
+    color: var(--white);
+    background-color: var(--pink)
+}
+
+:root {
+    --white: #FFFFFF;
+    --white-pink: #F8EDF0;
+    --dark: #000000;
+    --black: #0F0101;
+    --white-black: #150101;
+    --pink: #D23166;
+    --nearly-white: #FAFAFA;
+    --nearly-dark: #0F0000;
+    --namely--dark: #0A0808
+}
+
+*,
+::after,
+::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0;
+    margin: 0;
+    font-size: inherit;
+    font-family: inherit
+}
+
+button,
+button:focus,
+input,
+input:focus,
+textarea {
+    border: none;
+    outline: 0;
+    resize: none
+}
+
+li,
+ol,
+ul {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+    display: inline-block
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth
+}
+
+body {
+    min-width: 320px;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-family: 'Fredoka One', Roboto, 'Hind Madurai';
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: var(--white);
+    color: var(--dark);
+    overflow-x: hidden
+}
+
+.container {
+    max-width: 1150px;
+    padding: 0 30px;
+    margin: 0 auto
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden
+}
+
+.header,
+.hero,
+.sugar {
+    background-color: var(--white-pink)
+}
+
+.header__container {
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 30px
+}
+
+.header__list,
+.hero__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-pack: justify
+}
+
+.header__logo {
+    vertical-align: middle;
+    -webkit-transition: 40ms;
+    -o-transition: 40ms;
+    transition: 40ms
+}
+
+.header__links,
+.header__logo:active {
+    -webkit-transition: 40ms;
+    -o-transition: 40ms
+}
+
+.header__logo:active {
+    transition: 40ms;
+    opacity: .4
+}
+
+.header__list {
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 30px;
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px)
+}
+
+.header__links {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--white-black);
+    opacity: .6;
+    transition: 40ms;
+    font-family: Roboto
+}
+
+.header__links:active {
+    opacity: 1;
+    -webkit-transition: 40ms;
+    -o-transition: 40ms;
+    transition: 40ms;
+    color: var(--pink);
+    font-size: 14px;
+    text-shadow: 0 0 .5px var(--pink), 0 0 1px var(--pink);
+    line-height: 18px
+}
+
+.bread__link,
+.header__button-link,
+.hero__link,
+.orange__link,
+.sweat__link {
+    border: 2px solid var(--pink);
+    padding: 15px 50px;
+    background-color: var(--pink);
+    border-radius: 5px;
+    color: var(--white);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: 'Hind Madurai';
+    text-align: center;
+    -webkit-transition: 40ms;
+    -o-transition: 40ms;
+    transition: 40ms
+}
+
+.header__button-link:active,
+.hero__link:active {
+    -webkit-transition: 40ms;
+    -o-transition: 40ms;
+    background: 0 0;
+    color: var(--pink)
+}
+
+.header__button-link:active {
+    transition: 40ms
+}
+
+.hero__container {
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 100px
+}
+
+.hero__text {
+    margin-bottom: 6px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: .1em;
+    font-family: Roboto;
+    color: var(--black)
+}
+
+.hero__title,
+span {
+    width: 665px;
+    font-size: 57.33px;
+    line-height: 120.5%;
+    font-family: 'Fredoka One';
+    opacity: .9;
+    font-style: normal;
+    font-weight: 400
+}
+
+.hero__title {
+    margin-bottom: 25px;
+    color: var(--black)
+}
+
+span {
+    color: var(--pink)
+}
+
+.hero__title-second {
+    width: 523px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--black);
+    font-family: 'Hind Madurai';
+    opacity: .6;
+    margin-bottom: 50px
+}
+
+.navi__text,
+.navi__title {
+    color: var(--dark);
+    font-family: 'Hind Madurai';
+    font-style: normal
+}
+
+.hero__link:active {
+    transition: 40ms
+}
+
+.hero__right {
+    margin-left: -140px
+}
+
+.footer__container,
+.navi__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.navi__first,
+.navi__fourth,
+.navi__second,
+.navi__third {
+    border: 1px solid rgba(0, 0, 0, .03);
+    border-radius: 7px;
+    cursor: pointer;
+    width: 250px;
+    height: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transition: 40ms;
+    -o-transition: 40ms;
+    transition: 40ms
+}
+
+.product__container,
+.sugar__container {
+    display: -webkit-box;
+    display: -ms-flexbox
+}
+
+.navi__first:hover {
+    margin: 0;
+    border: none;
+    width: 250px;
+    -webkit-transition: 240ms;
+    -o-transition: 240ms;
+    transition: 240ms;
+    -webkit-box-shadow: 20px 20px 50px rgba(0, 0, 0, .03);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, .03);
+    border-radius: 7px
+}
+
+.navi__second:hover,
+.navi__third:hover {
+    border: none;
+    -webkit-transition: 240ms;
+    -o-transition: 240ms;
+    -webkit-box-shadow: 20px 20px 50px rgba(0, 0, 0, .03);
+    margin: 0;
+    width: 250px
+}
+
+.navi__howo {
+    margin-bottom: 24px;
+    margin-top: 33px
+}
+
+.navi__title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 9px
+}
+
+.navi__text {
+    width: 198px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    opacity: .6
+}
+
+.navi__second:hover {
+    transition: 240ms;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, .03);
+    border-radius: 7px
+}
+
+.navi__food {
+    margin-top: 35px;
+    margin-bottom: 23px
+}
+
+.navi__third:hover {
+    transition: 240ms;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, .03);
+    border-radius: 7px
+}
+
+.navi__cash {
+    margin-top: 33px;
+    margin-bottom: 23px
+}
+
+.navi__fourth:hover {
+    margin: 0;
+    border: none;
+    width: 250px;
+    -webkit-transition: 240ms;
+    -o-transition: 240ms;
+    transition: 240ms;
+    -webkit-box-shadow: 20px 20px 50px rgba(0, 0, 0, .03);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, .03);
+    border-radius: 7px
+}
+
+.navi__scooter {
+    margin-top: 27px;
+    margin-bottom: 18px
+}
+
+.sugar__container {
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 131px
+}
+
+.sugar__right {
+    margin-top: 50px
+}
+
+.sugar__title {
+    width: 349px;
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44.2px;
+    line-height: 49px;
+    color: var(--white-black);
+    margin-bottom: 16px
+}
+
+.sugar__link,
+.sugar__text {
+    font-size: 16px;
+    font-family: Roboto;
+    font-style: normal
+}
+
+.sugar__text {
+    width: 442px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--white-black);
+    opacity: .6;
+    margin-bottom: 35.1px
+}
+
+.sugar__link {
+    border: 2px solid var(--pink);
+    padding: 15px 50px;
+    background-color: var(--pink);
+    border-radius: 5px;
+    color: var(--white);
+    font-weight: 500;
+    line-height: 19px;
+    text-align: center;
+    -webkit-transition: 40ms;
+    -o-transition: 40ms;
+    transition: 40ms
+}
+
+.bread,
+.navi,
+.orange,
+.product,
+.sweat,
+.wrapper {
+    background-color: var(--white)
+}
+
+.navi__girl,
+.navi__photos {
+    border-radius: 50%
+}
+
+.sugar__link:active {
+    -webkit-transition: 40ms;
+    -o-transition: 40ms;
+    transition: 40ms;
+    background: 0 0;
+    color: var(--pink)
+}
+
+.product__container {
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 50px
+}
+
+.product__title {
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44.2px;
+    line-height: 61px;
+    color: var(--white-black);
+    margin-bottom: 64px
+}
+
+.product__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 41px
+}
+
+.link {
+    cursor: pointer;
+    font-size: 18px;
+    position: relative;
+    white-space: nowrap
+}
+
+.link::after,
+.link::before {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    top: 100%;
+    left: 0;
+    pointer-events: none
+}
+
+.link::before {
+    content: ''
+}
+
+.product__metis {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--dark);
+    opacity: .6;
+    -webkit-transition: -webkit-transform .3s cubic-bezier(.2, 1, .8, 1);
+    -o-transition: transform .3s cubic-bezier(.2, 1, .8, 1);
+    transition: transform .3s cubic-bezier(.2, 1, .8, 1);
+    display: inline-block;
+    transition: transform .3s cubic-bezier(.2, 1, .8, 1), -webkit-transform .3s cubic-bezier(.2, 1, .8, 1)
+}
+
+.product__metis:hover,
+.wrapper__button {
+    -webkit-transition: 240ms;
+    -o-transition: 240ms
+}
+
+.product__metis:hover {
+    opacity: 1;
+    transition: 240ms
+}
+
+.product__metis::before {
+    -webkit-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition: -webkit-clip-path .3s, -webkit-transform .3s cubic-bezier(.2, 1, .8, 1);
+    transition: clip-path .3s, transform .3s cubic-bezier(.2, 1, .8, 1), -webkit-clip-path .3s, -webkit-transform .3s cubic-bezier(.2, 1, .8, 1);
+    -o-transition: clip-path .3s, transform .3s cubic-bezier(.2, 1, .8, 1);
+    -webkit-clip-path: polygon(0% 0%, 0% 100%, 0 100%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%, 100% 100%, 100% 0%);
+    clip-path: polygon(0% 0%, 0% 100%, 0 100%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%, 100% 100%, 100% 0%)
+}
+
+.bread__link:active,
+.orange__link:active {
+    -webkit-transition: 40ms;
+    -o-transition: 40ms;
+    background: 0 0;
+    color: var(--pink)
+}
+
+.product__metis:hover::before {
+    -webkit-transform: translate3d(0, 2px, 0) scale3d(1.08, 3, 1);
+    transform: translate3d(0, 2px, 0) scale3d(1.08, 3, 1);
+    -webkit-clip-path: polygon(0% 0%, 0% 100%, 50% 100%, 50% 0, 50% 0, 50% 100%, 50% 100%, 0 100%, 100% 100%, 100% 0%);
+    clip-path: polygon(0% 0%, 0% 100%, 50% 100%, 50% 0, 50% 0, 50% 100%, 50% 100%, 0 100%, 100% 100%, 100% 0%);
+    color: var(--pink)
+}
+
+.product__metis:hover {
+    -webkit-transform: translate3d(0, -2px, 0);
+    transform: translate3d(0, -2px, 0)
+}
+
+.bread__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 23px
+}
+
+.bread__ice-cream {
+    -webkit-transform: translateY(45px);
+    -ms-transform: translateY(45px);
+    transform: translateY(45px)
+}
+
+.bread__right,
+.footer__left,
+.navi__families,
+.sweat__right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start
+}
+
+.orange__container,
+.orange__left {
+    display: -webkit-box;
+    display: -ms-flexbox
+}
+
+.bread__title,
+.sweat__title {
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 26px;
+    line-height: 36px;
+    color: var(--dark);
+    margin-bottom: 11px
+}
+
+.bread__text,
+.sweat__text {
+    width: 454px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--dark);
+    opacity: .7;
+    margin-bottom: 28px
+}
+
+.bread__cost,
+.bread__sale,
+.sweat__sale {
+    font-weight: 600;
+    color: var(--dark);
+    font-family: 'Hind Madurai';
+    font-style: normal
+}
+
+.bread__costs,
+.sweat__costs {
+    margin-bottom: 16px
+}
+
+.bread__cost {
+    font-size: 26px;
+    line-height: 36px
+}
+
+.bread__sale,
+.sweat__sale {
+    font-size: 20px;
+    line-height: 28px;
+    -webkit-transform: translateX(25px);
+    -ms-transform: translateX(25px);
+    transform: translateX(25px);
+    color: #000;
+    opacity: .7
+}
+
+.orange__cost,
+.orange__sale,
+.orange__text,
+.orange__title {
+    text-align: right;
+    color: var(--dark)
+}
+
+.bread__link:active {
+    transition: 40ms
+}
+
+.orange {
+    margin-bottom: 126px
+}
+
+.orange__container {
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    margin-bottom: 23px
+}
+
+.orange__left {
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end
+}
+
+.navi__container,
+.sweat__container {
+    display: -webkit-box;
+    display: -ms-flexbox
+}
+
+.orange__title {
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 26px;
+    line-height: 36px;
+    margin-bottom: 11px
+}
+
+.orange__text {
+    width: 444px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    opacity: .7;
+    margin-bottom: 20px
+}
+
+.orange__costs {
+    margin-bottom: 8px
+}
+
+.orange__cost {
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 36px
+}
+
+.orange__sale,
+.sweat__cost {
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 600
+}
+
+.orange__sale {
+    font-size: 20px;
+    line-height: 28px;
+    opacity: .7
+}
+
+.orange__link:active {
+    transition: 40ms
+}
+
+.orange__img {
+    -webkit-transform: translateY(90px);
+    -ms-transform: translateY(90px);
+    transform: translateY(90px)
+}
+
+.sweat__container {
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 112px
+}
+
+.sweat__cost {
+    font-size: 26px;
+    line-height: 36px;
+    color: var(--dark)
+}
+
+.navi__nationality,
+.navi__surname {
+    font-weight: 500;
+    color: var(--dark);
+    font-family: Roboto;
+    font-style: normal
+}
+
+.sweat__link:active {
+    -webkit-transition: 40ms;
+    -o-transition: 40ms;
+    transition: 40ms;
+    background: 0 0;
+    color: var(--pink)
+}
+
+.navi__container {
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 149px
+}
+
+.navi__left,
+.navi__personality {
+    display: -webkit-box;
+    display: -ms-flexbox
+}
+
+.navi__left {
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start
+}
+
+.navi__personality {
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 21px;
+    margin-bottom: 36px;
+    -webkit-transform: translateY(110px);
+    -ms-transform: translateY(110px);
+    transform: translateY(110px)
+}
+
+.navi__main-quote,
+.navi__slideshow {
+    display: -webkit-box;
+    display: -ms-flexbox
+}
+
+.navi__main-quote,
+.raspberry__right {
+    -ms-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal
+}
+
+.navi__surname {
+    font-size: 24px;
+    line-height: 28px
+}
+
+.navi__nationality {
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    opacity: .7
+}
+
+.navi__main-quote {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 322px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+    opacity: .7;
+    margin-bottom: 46px;
+    text-align: start;
+    -webkit-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    transform: translateX(30px)
+}
+
+.navi__left-arrow,
+.navi__right-arrow {
+    background: 0 0;
+    opacity: .5;
+    color: var(--pink)
+}
+
+.navi__quote {
+    -webkit-transform: translate(-180px, 13px);
+    -ms-transform: translate(-180px, 13px);
+    transform: translate(-180px, 13px);
+    margin-top: 100px
+}
+
+.navi__second-quote {
+    -webkit-transform: translate(115px, -10px);
+    -ms-transform: translate(115px, -10px);
+    transform: translate(115px, -10px)
+}
+
+.navi__slideshow {
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 27px
+}
+
+.raspberry__container,
+.raspberry__right {
+    display: -webkit-box;
+    display: -ms-flexbox
+}
+
+.navi__left-arrow {
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    -webkit-transition: 280ms;
+    -o-transition: 280ms;
+    transition: 280ms
+}
+
+.navi__left-arrow:active,
+.navi__right-arrow {
+    -webkit-transition: 280ms;
+    -o-transition: 280ms
+}
+
+.navi__left-arrow:active {
+    transition: 280ms;
+    opacity: 1
+}
+
+.navi__right-arrow {
+    transition: 280ms
+}
+
+.navi__photos,
+.navi__photos:hover {
+    -webkit-transition: 280ms;
+    -o-transition: 280ms;
+    width: 100%
+}
+
+.navi__photos {
+    transition: 280ms
+}
+
+.navi__photos:hover {
+    transition: 280ms;
+    border: 1px solid var(--pink);
+    border-radius: 50%
+}
+
+.navi__right-arrow:active {
+    -webkit-transition: 280ms;
+    -o-transition: 280ms;
+    transition: 280ms;
+    opacity: 1
+}
+
+.navi__triple-ice-cream {
+    -webkit-transform: translateY(50px);
+    -ms-transform: translateY(50px);
+    transform: translateY(50px)
+}
+
+.raspberry {
+    background-color: var(--white-pink);
+    margin-bottom: 191px
+}
+
+.raspberry__container {
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: end;
+    position: relative
+}
+
+.raspberry__container::before {
+    z-index: 1;
+    position: absolute;
+    content: '';
+    width: 305px;
+    height: 627px;
+    top: 60px;
+    left: 0;
+    display: block;
+    background-image: url('../images/menu__ice-cream.png')
+}
+
+.raspberry__right {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: 90px
+}
+
+.raspberry__title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 44.2px;
+    line-height: 52px;
+    color: var(--dark);
+    margin-bottom: 20px
+}
+
+.raspberry__text {
+    width: 607px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: .01em;
+    color: var(--black);
+    opacity: .7;
+    margin-bottom: 31px
+}
+
+.raspberry__mini-texts,
+.wrapper__title {
+    color: var(--dark);
+    font-family: Roboto;
+    font-style: normal
+}
+
+.raspberry__selectors {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: 17px;
+    margin-bottom: 41px
+}
+
+.raspberry__selections {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 10px
+}
+
+.raspberry__mini-texts {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px
+}
+
+.footer__form,
+.raspberry__links,
+.wrapper__form,
+.wrapper__main-input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.wrapper__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 28px;
+    margin-bottom: 149px
+}
+
+.footer__icons,
+.footer__main-ul {
+    display: -webkit-box;
+    display: -ms-flexbox
+}
+
+.wrapper__title {
+    width: 522px;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 52px;
+    text-align: center
+}
+
+.wrapper__input {
+    padding: 24px 320px 24px 30px;
+    background: var(--nearly-white);
+    border-radius: 5px;
+    border: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--nearly-dark);
+    opacity: .6
+}
+
+.footer,
+.wrapper__button {
+    color: var(--white)
+}
+
+.wrapper__button {
+    border: 2px solid var(--pink) !important;
+    -webkit-transform: translateX(-5px);
+    -ms-transform: translateX(-5px);
+    transform: translateX(-5px);
+    border-radius: 5px;
+    width: 150px;
+    height: 65px;
+    background-color: var(--pink);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    transition: 240ms
+}
+
+.footer,
+.footer__input {
+    background-color: var(--namely--dark)
+}
+
+.footer__logo-img,
+.wrapper__button:active {
+    -webkit-transition: 240ms;
+    -o-transition: 240ms
+}
+
+.wrapper__button:active {
+    transition: 240ms;
+    background: var(--white);
+    color: var(--pink)
+}
+
+.footer__logo-img {
+    vertical-align: middle;
+    transition: 240ms;
+    margin-bottom: 9px
+}
+
+.footer__links,
+.footer__logo-img:active {
+    -webkit-transition: 240ms;
+    -o-transition: 240ms
+}
+
+.footer__logo-img:active {
+    transition: 240ms;
+    opacity: .6
+}
+
+.footer__text {
+    width: 207px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: .01em;
+    color: var(--white);
+    opacity: .7;
+    margin-bottom: 25px
+}
+
+.footer__follow,
+.footer__links {
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--white);
+    font-family: Roboto;
+    font-style: normal
+}
+
+.footer__follow {
+    font-weight: 500;
+    margin-bottom: 8px
+}
+
+.footer__icons {
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: 10px
+}
+
+.footer__main-ul {
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 132px;
+    margin-top: 91px
+}
+
+.footer__right,
+.footer__ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal
+}
+
+.footer__ul {
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 5px
+}
+
+.footer__links {
+    font-weight: 400;
+    opacity: .6;
+    transition: 240ms
+}
+
+.footer__button,
+.footer__links:active {
+    -webkit-transition: 240ms;
+    -o-transition: 240ms
+}
+
+.footer__links:active {
+    opacity: 1;
+    transition: 240ms
+}
+
+.footer__right {
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin-top: 81px
+}
+
+.footer__newsletter {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    margin-bottom: 13px
+}
+
+.footer__button,
+.footer__input {
+    height: 55px;
+    color: var(--white)
+}
+
+.footer__main-input {
+    margin-bottom: 19px
+}
+
+.footer__input {
+    opacity: .5;
+    border: 2px solid var(--pink);
+    border-radius: 5px;
+    width: 338px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    opacity: .6;
+    padding: 0 32px
+}
+
+.footer__button {
+    -webkit-transform: translateX(-10px);
+    -ms-transform: translateX(-10px);
+    transform: translateX(-10px);
+    width: 125px;
+    background-color: var(--pink);
+    border-radius: 5px;
+    transition: 240ms
+}
+
+.footer__button:active {
+    border: 2px solid var(--pink);
+    -webkit-transition: 240ms;
+    -o-transition: 240ms;
+    transition: 240ms;
+    background: var(--namely--dark);
+    color: var(--pink)
+}
+
+.footer__second-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: 15px
+}
